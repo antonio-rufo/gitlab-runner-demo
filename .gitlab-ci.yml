@@ -1,0 +1,12 @@
+# .gitlab-ci.yml
+stages:
+  - verify-runner
+verify-runner:
+  stage: verify-runner
+  script:
+    - echo "Hello, World!"
+    - cat /etc/os-release
+    - hostname -f
+    - date
+  tags:
+    - demo-gitlab-runner
